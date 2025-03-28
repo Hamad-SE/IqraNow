@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recitation - Quranly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .surah-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .surah-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .surah-card h3 {
+            color: #2c786c;
+        }
+        .audio-controls {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Quranly</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recitation.html">Recitation</a></li>
+                <li><a href="translation.html">Translation</a></li>
+                <li><a href="memorization.html">Memorization</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('images/recitation-bg.jpg');">
+        <h1>Quran Recitation</h1>
+        <p>Listen to the Quran recited by renowned Qaris.</p>
+    </section>
+
+    <div class="surah-list">
+        <div class="surah-card">
+            <h3>Surah Al-Fatiha</h3>
+            <p>The Opening</p>
+            <div class="audio-controls">
+                <audio controls>
+                    <source src="audio/fatiha.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="surah-card">
+            <h3>Surah Al-Baqarah</h3>
+            <p>The Cow</p>
+            <div class="audio-controls">
+                <audio controls>
+                    <source src="audio/baqarah.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <!-- Add more Surah cards -->
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Quranly</p>
+    </footer>
+</body>
+</html>
